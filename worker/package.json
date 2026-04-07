@@ -1,0 +1,14 @@
+{
+  "name": "analytics-worker",
+  "version": "1.0.0",
+  "description": "Worker layer replacing API to DB direct inserts",
+  "main": "consumer.js",
+  "scripts": {
+    "start": "node consumer.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^17.4.1",
+    "mongodb": "^6.5.0"
+  }
+}

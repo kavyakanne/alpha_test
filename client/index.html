@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Tracker Demo</title>
+    <!-- Analytics Loader Snippet -->
+    <script>
+      (function(w, d, s, o, f, js, fjs) {
+        w['ht_tracker'] = o; w[o] = w[o] || function() {
+          (w[o].q = w[o].q || []).push(arguments)
+        };
+        // Load the external tracker script asynchronously
+        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+        js.id = o; js.src = f; js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs);
+      }(window, document, 'script', 'ht', 'http://localhost:8080/tracker.js'));
+
+      // Initialize the tracker with project ID
+      ht('init', 'proj_123');
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; height: 3000px; margin: 0; padding: 20px; text-align: center; }
+        .btn { padding: 10px 20px; font-size: 16px; cursor: pointer; border: none; border-radius: 4px; margin-top: 50px;}
+        .primary { background-color: #007bff; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Behavior Tracker Demo</h1>
+    <p>Scroll down or click the buttons to generate events. Check network tab for requests to port 3000.</p>
+    
+    <div>
+        <button id="signup-btn" class="btn primary">Sign Up Button</button>
+    </div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 // tracker.js (The Main SDK)
 (function() {
-  const API_ENDPOINT = 'http://localhost:3000/collect';
+  const API_ENDPOINT = 'alphatest-production.up.railway.app/collect';
   const SEND_INTERVAL = 3000; // Force send every 3 seconds if batch reaches limit or interval elapses
 
   // State
